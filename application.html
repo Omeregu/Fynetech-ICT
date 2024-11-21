@@ -6,50 +6,96 @@
     <title>FYNETECH</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="application.css">
-</head>
+    <style>
+      /* Responsive Enhancements */
+      .aform form input {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      @media (max-width: 768px) {
+        .aform form input {
+          margin-bottom: 10px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .aform h4 {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
+  </head>
   <body>
+    <div class="container-md">
+      <img style="width: 100%; height: auto;" src="img/ICT-IN-EDUCATIONAL-MANAGEMENT-for-school.jpg" alt="Educational Management">
+    </div>
 
-    
-    <div class="container-sm">
-        <img style="width: 100%; height: 200px;" src="img/ICT-IN-EDUCATIONAL-MANAGEMENT-for-school.jpg">
-        </div>
+    <h1 class="text-center mt-4">APPLICATION FORM</h1>
 
-    <h1 style="text-align: center;">APPLICATION FORM</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
- 
-    <div class="container">
+    <div class="container my-4">
+      <a href="index.html" class="btn btn-secondary mb-3">GO BACK HOME</a>
 
-      <a href="index.html">GO BACK HOME</a>
-      
-        <div class="aform">
-            <form style="padding-left: 80px;">
-                <input type="text" name="FIRST NAME" placeholder="FIRST NAME">
-                <input type="text" name="SURNAME" placeholder="SURNAME"><br><br>
-                <input type="text" name="ADDRESS" placeholder="P-ADDRESS">
-                <input type="text" name="SURNAME" placeholder="R- ADDRESS"> <br><br>
-                <input type="text" name="FIRST NAME" placeholder="COURSE APPLYING">
-                <input type="date" name="DATE" <h6>STARTING</h6><br><br>
-                <input type="date" name="DATE" <h6>ENDING</h6>
-                <input type="text" name="SURNAME" placeholder="GENDER"><br><br>
-                <input type="text" name="FIRST NAME" placeholder="STATE">
-                <input type="text" name="SURNAME" placeholder="LOCAL GOVT"><br><br>
-                <input type="text" name="FIRST NAME" placeholder="TELEPHONE">
-                <input type="text" name="SURNAME" placeholder="EMAIL"> <br><br>
-                <h4 style="text-align: left;">PREFFERED TIME OF CLASS</h4>
-                <input type="text" name="FIRST NAME" placeholder="STARTING">
-                <input type="text" name="SURNAME" placeholder="ENDING"><br><br>
-                <input type="checkbox"> Full Payment
-                <input type="checkbox">Installment<br><br>
-                </form>
-
-                <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn btn-primary" type="button">SUBMIT</button>
-                  </div>
+      <div class="aform">
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="FIRST NAME" placeholder="FIRST NAME">
             </div>
-            
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="SURNAME" placeholder="SURNAME">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="ADDRESS" placeholder="P-ADDRESS">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="R-ADDRESS" placeholder="R-ADDRESS">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="COURSE" placeholder="COURSE APPLYING">
+            </div>
+            <div class="col-md-6">
+              <input type="date" class="form-control" name="STARTING" placeholder="STARTING DATE">
+            </div>
+            <div class="col-md-6">
+              <input type="date" class="form-control" name="ENDING" placeholder="ENDING DATE">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="GENDER" placeholder="GENDER">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="STATE" placeholder="STATE">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="LOCAL GOVT" placeholder="LOCAL GOVT">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="TELEPHONE" placeholder="TELEPHONE">
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" name="EMAIL" placeholder="EMAIL">
+            </div>
+          </div>
+
+          <h4 class="mt-4">PREFERRED TIME OF CLASS</h4>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="STARTING" placeholder="STARTING">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="ENDING" placeholder="ENDING">
+            </div>
+          </div>
+
+          
+        </form>
+
+        <div class="d-grid gap-2 col-6 mx-auto mt-4">
+          <button class="btn btn-primary" type="button">SUBMIT</button>
+        </div>
       </div>
+    </div>
 
-
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
